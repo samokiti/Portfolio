@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b8dbf3;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;             
+    padding: 30px;              
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;  
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;        
+    color: #2b6cb0;
+    border-radius: 16px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    background-color: #ebf8ff;
+}
+
+h2 {
+    color: #2d3748;
+    border-bottom: 2px dashed #cbd5e0; 
+    padding-bottom: 10px;
+}
+
+.pictureprakob{
+        width: 20%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border: 5px double #3182ce;
+        border-radius: 50%;
+        background-color: #ffffff;
+        vertical-align: middle;
+}
+
+.pictureprakob:hover {
+    transform: scale(1.05) rotate(2deg);
+    filter: drop-shadow(0 8px 16px rgba(49, 130, 206, 0.35));
+    cursor: pointer;
+}
+
+
+
+.content-flex {
+    display: flex;              
+    flex-direction: row;
+    flex-wrap: wrap;            
+    justify-content: space-between;
+    align-items: center;       
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #edf2f7;  
+    background-color: #fdfdfd;
+}
+
+.ingredients, .vttum{
+    flex: 1;                    
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* 4. Img, Width, Height */
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+#ingredients {
+    width: 250px;               
+    height: auto;               
+}
+#ingredients:hover {
+    transform: scale(1.05) rotate(2deg);
+    filter: drop-shadow(0 8px 16px rgba(49, 130, 206, 0.35));
+    cursor: pointer;
+}
+
+#howto {
+    width: 300px;               
+    height: auto;               
+}
+#howto:hover {
+    transform: scale(1.05) rotate(2deg);
+    filter: drop-shadow(0 8px 16px rgba(49, 130, 206, 0.35));
+    cursor: pointer;
+}
+
+a:link {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #e53e3e;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: right;          
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #e2e8f0;
+}
+

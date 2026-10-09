@@ -1,0 +1,56 @@
+/* 2. สร้างหน้ากระดาษ */
+body {
+    max-width: 600px;
+    min-height: 750px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #222222; /* 1. เปลี่ยนกระดาษเป็นสีเทาเข้มเกือบดำ */
+    color: white;              /* 2. เพิ่มบรรทัดนี้ เพื่อสั่งให้ข้อความทั้งหมดเป็นสีขาว */
+    border: 1px solid #111;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ... (โค้ดส่วน #top และ hr ใช้แบบเดิมได้เลย) ... */
+
+/* 5. พื้นที่สำหรับแสดงข้อความ */
+#topic, #reply1, #reply2 {
+    min-height: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white; /* 3. แก้ตรงนี้จากเดิม #222 ให้เป็น white ด้วยครับ */
+    padding-left: 5px;
+}
+
+/* 6. ตกแต่งกล่องพิมพ์ข้อความ (Textarea) */
+#message {
+    width: 300px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    background-color: #333; /* ทำให้กล่องพิมพ์ข้อความสีเข้ม */
+    color: white;           /* ทำให้ข้อความที่เราพิมพ์ลงไปเป็นสีขาว */
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
+
+/* 7. ตกแต่งปุ่ม Post และ Clear */
+button {
+    padding: 6px 15px;
+    margin-right: 5px;
+    background-color: #444; /* เปลี่ยนปุ่มเป็นสีเข้ม */
+    color: white;           /* ตัวหนังสือบนปุ่มเป็นสีขาว */
+    border: 1px solid #666;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #666; /* สีปุ่มสว่างขึ้นเล็กน้อยเวลานำเมาส์ไปชี้ */
+}
+
+img {
+    height: 100px;
+}

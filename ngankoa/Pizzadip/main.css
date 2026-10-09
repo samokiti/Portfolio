@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+img {
+    width: 80%;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+#ingredients_pic{
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 45% 30%; 
+    grid-template-areas:
+        "header header header"
+        "main1 main2 main3"
+        "footer footer footer";
+    gap: 15px; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+.grid-container > div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+.flex_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-md) auto;
+    padding: var(--space-xs);
+    width: 100%;
+}
+
+.vttum{
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    width: 140px;
+    padding: 12px 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#header {
+    grid-area: header;
+    background-color: #D63E12;
+    color: white;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#main1 {
+    grid-area: main1;
+    background-color: #dba24a; 
+}
+
+#main2 {
+    grid-area: main2;
+    background-color: #e1d800; 
+}
+
+#main3 {
+    grid-area: main3;
+    background-color: #52AA24; /* สีเขียวอ่อน */
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+#footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    color:#D63E12;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header header"
+            "main1 main2"
+            "main3 main3"
+            "footer footer";
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "main1"
+            "main2"
+            "main3"
+            "footer";
+    }
+    
+    .grid-container > div {
+        padding: 15px; 
+    }
+}
